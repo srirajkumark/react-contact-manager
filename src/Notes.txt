@@ -1,0 +1,9 @@
+npx create-react-app react-contact-manager
+
+BootStrap : npm install bootstrap -> css, js
+
+fontawesome Icons : npm i @fortawesome/fontawesome-free -> css
+
+connect fontawesome cdn link to html page
+
+index.js 
