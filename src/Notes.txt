@@ -6,6 +6,18 @@ fontawesome Icons : npm i @fortawesome/fontawesome-free -> css
 
 connect fontawesome cdn link to html page
 
-index.js 
+axios, react-router-dom
 
-To create the contact detail pages, before axios installations need to be completed.
+axios -> npm install axios 
+
+react-router-dom -> npm install react-router-dom 
+
+Components required: 
+navbar
+contact-list
+view-contact
+edit-contact
+add-contact 
+
+Services required: 
+ContactService
