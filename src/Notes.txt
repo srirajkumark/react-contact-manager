@@ -7,3 +7,5 @@ fontawesome Icons : npm i @fortawesome/fontawesome-free -> css
 connect fontawesome cdn link to html page
 
 index.js 
+
+To create the contact detail pages, before axios installations need to be completed.
