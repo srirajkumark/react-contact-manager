@@ -23,3 +23,5 @@ Services required:
 ContactService
 
 React Router Dom 
+
+Contact List Page Development using Static data
