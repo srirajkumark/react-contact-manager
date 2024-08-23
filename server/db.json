@@ -1,0 +1,90 @@
+{
+    "contacts" : [
+        {
+            "id": "AA@#$S123",
+            "name": "Raj",
+            "photo": "https://cdn-icons-png.flaticon.com/512/219/219986.png",
+            "mobile": "9999900000",
+            "email": "raj@gmail.com",
+            "title": "Software Architect",
+            "company": "Google Tech",
+            "groupId": "3"
+        },
+        {
+            "id": "AA@#$S345",
+            "name": "Vamsi",
+            "photo": "https://cdn-icons-png.flaticon.com/512/219/219986.png",
+            "mobile": "9090909090",
+            "email": "vamsi@gmail.com",
+            "title": "Software Support Desk",
+            "company": "HCL Tech",
+            "groupId": "2"
+        },
+        {
+            "id": "AA@#$S458",
+            "name": "Sri",
+            "photo": "https://cdn-icons-png.flaticon.com/512/219/219986.png",
+            "mobile": "9192939495",
+            "email": "Sri@gmail.com",
+            "title": "Software Developer",
+            "company": "Cognizant Tech",
+            "groupId": "3"
+        },
+        {
+            "id": "AA@#$S976",
+            "name": "Pavan",
+            "photo": "https://cdn-icons-png.flaticon.com/512/219/219986.png",
+            "mobile": "91234567890",
+            "email": "pavan@gmail.com",
+            "title": "Software Test Engineer",
+            "company": "Peoples Tech",
+            "groupId": "5"
+        },
+        {
+            "id": "AA@#$S675",
+            "name": "Prasad",
+            "photo": "https://cdn-icons-png.flaticon.com/512/219/219986.png",
+            "mobile": "9373873838",
+            "email": "prasad@gmail.com",
+            "title": "Software Developer",
+            "company": "RSAS Tech",
+            "groupId": "1"
+        },
+        {
+            "id": "AA@#$S325",
+            "name": "Ram",
+            "photo": "https://cdn-icons-png.flaticon.com/512/219/219986.png",
+            "mobile": "9000010000",
+            "email": "ram@gmail.com",
+            "title": "Software Analyst",
+            "company": "Coffee Tech",
+            "groupId": "6"
+        }
+    ],
+    "groups": [
+        {
+            "id": "1",
+            "name": "Colleague"
+        },
+        {
+            "id": "2",
+            "name": "Friend"
+        },
+        {
+            "id": "3",
+            "name": "Family"
+        },
+        {
+            "id": "4",
+            "name": "Service"
+        },
+        {
+            "id": "5",
+            "name": "Community"
+        },
+        {
+            "id": "6",
+            "name": "Social"
+        }
+    ]
+}

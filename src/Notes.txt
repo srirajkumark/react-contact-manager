@@ -27,3 +27,7 @@ React Router Dom
 Contact List Page Development using Static data
 
 Add, Edit & View Cntact Pages HTML Setup
+
+JSON Server --> command -> npm install json-server
+by using JSON file -> db.json  
+create package.json command -> npm init --yes
