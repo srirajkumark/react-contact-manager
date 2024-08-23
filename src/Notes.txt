@@ -25,3 +25,5 @@ ContactService
 React Router Dom 
 
 Contact List Page Development using Static data
+
+Add, Edit & View Cntact Pages HTML Setup
