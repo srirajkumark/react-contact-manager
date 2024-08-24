@@ -31,3 +31,16 @@ Add, Edit & View Cntact Pages HTML Setup
 JSON Server --> command -> npm install json-server
 by using JSON file -> db.json  
 create package.json command -> npm init --yes
+
+API Testing:
+-----------------
+GET all contacts: GET -> http://localhost:9000/contacts
+
+GET a single contact : GET -> http://localhost:9000/contacts/id
+
+Create a contact : POST -> http://localhost:9000/contacts
+
+Update a contact : PUT -> http://localhost:9000/contacts/id
+
+Delete a contact : DELETE -> http://localhost:9000/contacts/id
+
