@@ -10,7 +10,8 @@ let ViewContact = () => {
     let [state, setState] = useState({
         loading : false,
         contact : {},
-        errorMessage : ''
+        errorMessage : '',
+        group : {}
     });
 
     useEffect(() => {
@@ -18,10 +19,12 @@ let ViewContact = () => {
             try {
                 setState({...state , loading : true});
                 let response = await ContactService.getContact(contactId);
+                let groupResponse = await ContactService.getGroup(response.data);
                 setState({
                     ...state,
                     loading : false,
-                    contact : response.data
+                    contact : response.data,
+                    group : groupResponse.data
                 });
             }
             catch (error) {
@@ -36,7 +39,7 @@ let ViewContact = () => {
 
     }, [contactId]);
 
-    let {loading, contact, errorMessage} = state;
+    let {loading, contact, errorMessage, group} = state;
     
     return(
         <React.Fragment>
@@ -54,32 +57,32 @@ let ViewContact = () => {
             {
                 loading ? <Spinner /> : <Fragment>
                     {
-                        Object.keys(contact).length > 0 &&
+                        Object.keys(contact).length > 0 && Object.keys(group).length > 0 &&
                         <section className="view-contact mt-3">
                             <div className="container">
                                 <div className="row align-items-center">
                                     <div className="col-md-4">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/219/219986.png" alt="" className="contact-img" />
+                                        <img src={contact.photo} alt="" className="contact-img" />
                                     </div>
                                     <div className="col-md-8">
                                         <ul className="list-group">
                                             <li className="list-group-item list-group-item-action">
-                                                Name : <span className="fw-bold">Raj</span>
+                                                Name : <span className="fw-bold">{contact.name}</span>
                                             </li>
                                             <li className="list-group-item list-group-item-action">
-                                                Mobile : <span className="fw-bold">9123456789</span>
+                                                Mobile : <span className="fw-bold">{contact.mobile}</span>
                                             </li>
                                             <li className="list-group-item list-group-item-action">
-                                                Email : <span className="fw-bold">raj@gmail.com</span>
+                                                Email : <span className="fw-bold">{contact.email}</span>
                                             </li>
                                             <li className="list-group-item list-group-item-action">
-                                                Company : <span className="fw-bold">RSA</span>
+                                                Company : <span className="fw-bold">{contact.company}</span>
                                             </li>
                                             <li className="list-group-item list-group-item-action">
-                                                Title : <span className="fw-bold">Frontend Developer</span>
+                                                Title : <span className="fw-bold">{contact.title}</span>
                                             </li>
                                             <li className="list-group-item list-group-item-action">
-                                                Group : <span className="fw-bold">O+ve</span>
+                                                Group : <span className="fw-bold">{group.name}</span>
                                             </li>
                                         </ul>
                                     </div>

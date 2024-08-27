@@ -8,8 +8,20 @@ export class ContactService {
         return axios.get(dataURL);
     }
 
+    static getGroups(){
+        let dataURL = `${this.serverURL}/groups`;
+        return axios.get(dataURL);
+    }
+
+    static getGroup(contact){
+        let groupId = contact.groupId;
+        let dataURL = `${this.serverURL}/groups/${groupId}`;
+        return axios.get(dataURL);
+    }
+
     static getContact(contactId){
         let dataURL = `${this.serverURL}/contacts/${contactId}`;
         return axios.get(dataURL);
     }
+    
 }
