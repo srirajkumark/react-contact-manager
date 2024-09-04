@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 let AddContact = () => {
+
+    let [state , setState] = useState({
+        loading : false,
+        contact : {},
+        groups : [],
+        errorMessage : ''
+    });
+
+
     return(
         <React.Fragment>
             <section className="add-contact">
