@@ -1,90 +1,100 @@
 {
-    "contacts" : [
-        {
-            "id": "qseacake",
-            "name": "Raj",
-            "photo": "https://toppng.com/uploads/preview/icons-logos-emojis-user-icon-png-transparent-11563566676e32kbvynug.png",
-            "mobile": "9999900000",
-            "email": "raj@gmail.com",
-            "title": "Software Architect",
-            "company": "Google Tech",
-            "groupId": "3"
-        },
-        {
-            "id": "qspinach",
-            "name": "Vamsi",
-            "photo": "https://cdn-icons-png.flaticon.com/512/219/219986.png",
-            "mobile": "9090909090",
-            "email": "vamsi@gmail.com",
-            "title": "Software Support Desk",
-            "company": "HCL Tech",
-            "groupId": "2"
-        },
-        {
-            "id": "qostrich",
-            "name": "Sri",
-            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQsWGsiGUXzgug60XJ2YDaTGPSK5bIuPzz3BfJdKmtlnbYvtMDUEndyCQmAWcnbsVLNwU&usqp=CAU",
-            "mobile": "9192939495",
-            "email": "Sri@gmail.com",
-            "title": "Software Developer",
-            "company": "Cognizant Tech",
-            "groupId": "3"
-        },
-        {
-            "id": "qbirdran",
-            "name": "Pavan",
-            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3UYUlPVKLM_9U_BICra5i1wpf1Li3mKa-u-gTHSIIjQdsx6_ZophOI50Cbj2ymZbI90&usqp=CAU",
-            "mobile": "91234567890",
-            "email": "pavan@gmail.com",
-            "title": "Software Test Engineer",
-            "company": "Peoples Tech",
-            "groupId": "5"
-        },
-        {
-            "id": "qnixstyx",
-            "name": "Prasad",
-            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxc6H3PoqSSAMvQz-E2FT991o67d4kLmdc_A_sBBPC4mid_iGFnoAXwgAHzvvk7yAvpI&usqp=CAU",
-            "mobile": "9373873838",
-            "email": "prasad@gmail.com",
-            "title": "Software Developer",
-            "company": "RSAS Tech",
-            "groupId": "1"
-        },
-        {
-            "id": "qispztqk",
-            "name": "Ram",
-            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBcoI23p8BwC502B3cS4nTAn2UVsq5g-E5Dm84vYYE8xTD9dDF9BZvoq-VvSKIu4BSh0&usqp=CAU",
-            "mobile": "9000010000",
-            "email": "ram@gmail.com",
-            "title": "Software Analyst",
-            "company": "Coffee Tech",
-            "groupId": "6"
-        }
-    ],
-    "groups": [
-        {
-            "id": "1",
-            "name": "Colleague"
-        },
-        {
-            "id": "2",
-            "name": "Friend"
-        },
-        {
-            "id": "3",
-            "name": "Family"
-        },
-        {
-            "id": "4",
-            "name": "Service"
-        },
-        {
-            "id": "5",
-            "name": "Community"
-        },
-        {
-            "id": "6",
-            "name": "Social"
-        }
-    ]
+  "contacts": [
+    {
+      "id": "qseacake",
+      "name": "Raj",
+      "photo": "https://toppng.com/uploads/preview/icons-logos-emojis-user-icon-png-transparent-11563566676e32kbvynug.png",
+      "mobile": "9999900000",
+      "email": "raj@gmail.com",
+      "title": "Software Architect",
+      "company": "Google Tech",
+      "groupId": "3"
+    },
+    {
+      "id": "qspinach",
+      "name": "Vamsi",
+      "photo": "https://cdn-icons-png.flaticon.com/512/219/219986.png",
+      "mobile": "9090909090",
+      "email": "vamsi@gmail.com",
+      "title": "Software Support Desk",
+      "company": "HCL Tech",
+      "groupId": "2"
+    },
+    {
+      "id": "qostrich",
+      "name": "Sri",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQsWGsiGUXzgug60XJ2YDaTGPSK5bIuPzz3BfJdKmtlnbYvtMDUEndyCQmAWcnbsVLNwU&usqp=CAU",
+      "mobile": "9192939495",
+      "email": "Sri@gmail.com",
+      "title": "Software Developer",
+      "company": "Cognizant Tech",
+      "groupId": "3"
+    },
+    {
+      "id": "qbirdran",
+      "name": "Pavan",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3UYUlPVKLM_9U_BICra5i1wpf1Li3mKa-u-gTHSIIjQdsx6_ZophOI50Cbj2ymZbI90&usqp=CAU",
+      "mobile": "91234567890",
+      "email": "pavan@gmail.com",
+      "title": "Software Test Engineer",
+      "company": "Peoples Tech",
+      "groupId": "5"
+    },
+    {
+      "id": "qnixstyx",
+      "name": "Prasad",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxc6H3PoqSSAMvQz-E2FT991o67d4kLmdc_A_sBBPC4mid_iGFnoAXwgAHzvvk7yAvpI&usqp=CAU",
+      "mobile": "9373873838",
+      "email": "prasad@gmail.com",
+      "title": "Software Developer",
+      "company": "RSAS Tech",
+      "groupId": "1"
+    },
+    {
+      "id": "qispztqk",
+      "name": "Ram",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBcoI23p8BwC502B3cS4nTAn2UVsq5g-E5Dm84vYYE8xTD9dDF9BZvoq-VvSKIu4BSh0&usqp=CAU",
+      "mobile": "9000010000",
+      "email": "ram@gmail.com",
+      "title": "Software Analyst",
+      "company": "Coffee Tech",
+      "groupId": "6"
+    },
+    {
+      "id": "a5ad",
+      "name": "Rajan",
+      "photo": "https://img.freepik.com/premium-vector/businessman-avatar-illustration-cartoon-user-portrait-user-profile-icon_118339-5507.jpg",
+      "mobile": "7837123190",
+      "email": "rajan@email.com",
+      "company": "Wiproz Tech",
+      "title": "Automation Engineer",
+      "groupId": "1"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
 }
