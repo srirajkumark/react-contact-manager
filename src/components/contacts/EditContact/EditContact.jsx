@@ -1,8 +1,60 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { ContactService } from "../../../services/ContactService";
 
 
 let EditContact = () => {
+
+    let {contactId} = useParams();
+
+    let {state , setState} = useState({
+        loading : false,
+        contact : {
+            name : '',
+            photo : '',
+            mobile : '',
+            email : '',
+            company : '',
+            title : '',
+            groupId : ''
+        },
+        groups : [],
+        errorMessage : ''
+    });
+
+    useEffect(() => {
+        const fetchData = async() => {
+            try{
+                setState({...state, loading: true});
+                let response = await ContactService.getContact(contactId);
+                setState({...state, 
+                    loading: false,
+                    contact: response.data
+                });
+            }
+            catch(error){
+            //     // setState({
+            //     //     ...state,
+            //     //     loading: false,
+            //     //     errorMessage: error.message
+            //     // });
+            }
+            // catch (error) {
+            //     setState((prevState) => ({
+            //         ...prevState,
+            //         loading: false,
+            //         errorMessage: error.message
+            //     }));
+            // }
+        };
+
+        fetchData();
+
+    }, [contactId]);
+
+
+    
+
     return(
         <React.Fragment>
             <section className="add-contact">

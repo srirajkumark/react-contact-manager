@@ -69,6 +69,16 @@
       "company": "Wiproz Tech",
       "title": "Automation Engineer",
       "groupId": "1"
+    },
+    {
+      "id": "04be",
+      "name": "Mani",
+      "photo": "https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-1024.png",
+      "mobile": "9123456789",
+      "email": "manik@gmail.com",
+      "company": "Envistech",
+      "title": "SAP Consultant",
+      "groupId": "5"
     }
   ],
   "groups": [
