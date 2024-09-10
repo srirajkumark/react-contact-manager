@@ -29,4 +29,8 @@ export class ContactService {
         return axios.post(dataURL, contact);
     };
     
+    static updateContact(contact , contactId){
+        let dataURL = `${this.serverURL}/contacts/${contactId}`;
+        return axios.put(dataURL, contact);
+    };
 }
