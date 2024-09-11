@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 import { ContactService } from "../../../services/ContactService";
 import Spinner from "../../spinner/Spinner";
+import { click } from "@testing-library/user-event/dist/click";
 
 let ContactList = () => {
 
@@ -34,6 +35,23 @@ let ContactList = () => {
         fetchData();
         
     }, []);
+
+    //delete contact
+    let clickDelete = async (contactId) => {
+        try {
+            let response = await ContactService.deleteContact(contactId);
+            if(response){
+                setState({...state, loading: true});
+                let response = await ContactService.getAllContacts();
+                setState({
+                    ...state,
+                    loading: false,
+                    contacts: response.data
+                });
+            }
+        }
+        catch (error){}
+    };
 
     let {loading, contacts, errorMessage} = state;
 
@@ -110,7 +128,7 @@ let ContactList = () => {
                                                                 <Link to={`/contacts/edit/${contacts.id}`} className="btn btn-primary my-1">
                                                                     <i className="fa fa-pen" />
                                                                 </Link>
-                                                                <button className="btn btn-danger my-1">
+                                                                <button className="btn btn-danger my-1" onClick={() => clickDelete(contacts.id)}>
                                                                     <i className="fa fa-trash" />
                                                                 </button>
                                                             </div>
