@@ -1,5 +1,7 @@
 # Contact Manager Application using React
 
+### In this Project, we mainly use CRUD operations to Create, Display, Update and Delete contacts.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
